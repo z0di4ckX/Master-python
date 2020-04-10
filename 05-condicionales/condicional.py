@@ -21,6 +21,12 @@
         > mayor que
         <=  menor o igual que
         >= mayour o igual que
+
+    3. operadores logicos
+        AND = y
+        OR = o
+        ! = negacion
+        NOT = no
 """
 
 # Ejemplo 1
@@ -67,3 +73,35 @@ if edad >= mayoria_edad:
 
 else:
     print(f"{nombre} NO es mayor de edad.")
+
+
+# Ejemplos 4
+print("\n#########  EJEMPLO 4 #################")
+
+dia = 2
+# dia = int(input("Escribe cual numero de la semana: "))
+
+if dia == 1:
+    print("Es Lunes")
+elif dia == 2:
+    print("Es martes")
+elif dia == 3:
+    print("Es miercoles")
+elif dia == 4:
+    print("Es jueves")
+elif dia == 5:
+    print("Es viernes")
+else:
+    print("Es fin de semana")
+
+# Ejemplos 5
+print("\n#########  EJEMPLO 5 #################")
+
+edad_minima = 18
+edad_maxima = 65
+edad_oficial = int(input("Tienes edad de trabajar? Introduce tu edad: "))
+
+if edad_oficial >= 18 and edad_oficial <= 65:
+    print("Esta en edad de trabajar")
+else:
+    print("No esta en edad de trabajar")
