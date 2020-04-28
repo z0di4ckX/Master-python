@@ -26,3 +26,20 @@ while contador <= 100:
     contador += 1
 
 print(muestrame)
+
+
+print("============ Ejemplo 2 ============")
+
+numero_usario = int(input("De que numero quiere la tabla?: "))
+
+if numero_usario < 1:
+    numero_usario = 1
+
+print(f"##### Tabala del {numero_usario} ####")
+
+contador = 1
+while contador <= 10:
+    print(f"{numero_usario} X {contador} = {numero_usario*contador}")
+    contador += 1
+else:
+    print("Tabla terminada")
