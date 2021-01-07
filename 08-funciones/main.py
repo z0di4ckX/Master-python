@@ -53,3 +53,23 @@ def tabla(numero):
     print("\n")
 
 tabla(numero)
+
+
+# Ejemplo 3.1
+print("############# Ejemplo 3.1 #########")
+for number_tablas in range(1, 11): 
+    tabla(number_tablas)  
+
+# Ejemplo 4 
+print("############ Ejemplo 4 ############")
+
+# Parametros opcionales
+
+def get_empleado(nombre_del_empleado, dni = None):
+    print("EMPLEADO")
+    print(f"Nombre: {nombre_del_empleado}")
+
+    if dni != None:
+        print(f"ID: {dni}")
+
+get_empleado("Victor Robles", 423245)
