@@ -25,6 +25,7 @@ def muestra_nombre():
 muestra_nombre()
 
 # Ejemplo 2 parametros
+'''
 print("############ Ejemplo 2 ############")
 
 nombre = input("Introduce tu nombre: ")
@@ -59,7 +60,7 @@ tabla(numero)
 print("############# Ejemplo 3.1 #########")
 for number_tablas in range(1, 11): 
     tabla(number_tablas)  
-
+'''
 # Ejemplo 4 
 print("############ Ejemplo 4 ############")
 
@@ -111,3 +112,20 @@ def calculadora(numero1, numero2, basicos = False):
     return(cadena)
 
 print(calculadora(54, 3))
+
+# Ejemplo 7
+print("\n############ Ejemplo 7 ############")
+
+def getNombre(nombre):
+    texto = f"El nombre del usario: {nombre}"
+    return texto
+
+def getApellido(apellido):
+    texto = f"El apellido del usario: {apellido}"
+    return texto
+
+def getDevulveTodo(nombre, apellido):
+    texto = getNombre(nombre) + "\n" + getApellido(apellido)
+    return texto
+
+print(getDevulveTodo("Victor", "Ruz"))
