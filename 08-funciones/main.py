@@ -76,7 +76,7 @@ get_empleado("Victor Robles", 423245)
 
 # Ejemplo 5, returns o devolver datos
 
-print("############ Ejemplo 5 ############")
+print("\n############ Ejemplo 5 ############")
 
 def saludame(nombres):
 
@@ -85,3 +85,29 @@ def saludame(nombres):
     return(saludo)
 
 print(saludame("Victor"))
+
+# Ejemplo 6
+print("\n############ Ejemplo 6 ############")
+
+def calculadora(numero1, numero2, basicos = False):
+    
+    suma = numero1 + numero2
+    resta = numero1 - numero2
+    multi = numero1 * numero2
+    divi = numero1 / numero2
+
+    cadena = ""
+
+    if basicos != False:
+        cadena += "Suma: " + str(suma)
+        cadena += "\n"
+        cadena += "Resta: " + str(resta)
+        cadena += "\n"
+    else:
+        cadena += "Multiplicacion: " + str(multi)
+        cadena += "\n"
+        cadena += "division: " + str(divi)
+
+    return(cadena)
+
+print(calculadora(54, 3))
