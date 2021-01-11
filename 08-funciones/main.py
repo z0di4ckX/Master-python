@@ -73,3 +73,15 @@ def get_empleado(nombre_del_empleado, dni = None):
         print(f"ID: {dni}")
 
 get_empleado("Victor Robles", 423245)
+
+# Ejemplo 5, returns o devolver datos
+
+print("############ Ejemplo 5 ############")
+
+def saludame(nombres):
+
+    saludo = f"Hola un saludo a {nombres}"
+
+    return(saludo)
+
+print(saludame("Victor"))
