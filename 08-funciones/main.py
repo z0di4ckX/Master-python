@@ -129,3 +129,10 @@ def getDevulveTodo(nombre, apellido):
     return texto
 
 print(getDevulveTodo("Victor", "Ruz"))
+
+# Ejemplo 8: Funciones Lambda
+print("\n############ Ejemplo 7 ############")
+
+dime_el_year = lambda year: f"El ano es {year * 50}"
+
+print(dime_el_year(2034))
